@@ -6,10 +6,14 @@ class App < Sinatra::Base
   get '/' do
     erb :index
   end
-
+  # Get request to /NEW which has the create_puppy.erb file & form
   get '/NEW' do
     erb :create_puppy
   end
-  # post ''
+
+  # Take user input to POST to display_puppy.erb file/page
+  post '/' do
+    erb :display_puppy
+  end
 
 end
