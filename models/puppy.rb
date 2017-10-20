@@ -7,7 +7,4 @@ class Puppy
   end
 
 
-
-
-
 end
