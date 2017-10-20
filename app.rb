@@ -6,8 +6,9 @@ class App < Sinatra::Base
   get '/' do
     erb :index
   end
+
   # Get request to /NEW which has the create_puppy.erb file & form
-  get '/NEW' do
+  get '/new' do
     erb :create_puppy
   end
 
