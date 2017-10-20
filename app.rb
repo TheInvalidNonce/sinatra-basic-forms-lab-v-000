@@ -14,6 +14,8 @@ class App < Sinatra::Base
 
   # Take user input to POST to display_puppy.erb file/page
   post '/' do
+    @puppy = Puppy.new(name, breed, age)
+    
     erb :display_puppy
   end
 
